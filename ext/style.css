@@ -10,6 +10,7 @@ span[title], abbr[title] {
 
 table {
     border-collapse: collapse;
+    line-height: normal;
 }
 
 tr {
@@ -27,27 +28,27 @@ td.text {
 
 .champions {
     color: inherit;
-    background: #2b2;
+    background: #26cf26;
 }
 
 .champions-league {
     color: inherit;
-    background: #4d4;
+    background: #5be15b;
 }
 
 .champions-league-qualifying {
     color: inherit;
-    background: #6f6;
+    background: #80ff80;
 }
 
 .europa-league {
     color: inherit;
-    background: #dd4;
+    background: #ffff80;
 }
 
 .relegated {
     color: inherit;
-    background: #d44;
+    background: #ff8080;
 }
 
 .home-win, .home-draw, .home-loss {
