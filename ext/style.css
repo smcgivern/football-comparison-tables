@@ -1,0 +1,86 @@
+body {
+    margin: 0em auto;
+    max-width: 50em;
+}
+
+span[title], abbr[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border: 0.2em solid #fff;
+}
+
+td {
+    text-align: right;
+    padding: 0em 0.5em;
+}
+
+td.text {
+    text-align: left;
+}
+
+.champions {
+    color: inherit;
+    background: #2b2;
+}
+
+.champions-league {
+    color: inherit;
+    background: #4d4;
+}
+
+.champions-league-qualifying {
+    color: inherit;
+    background: #6f6;
+}
+
+.europa-league {
+    color: inherit;
+    background: #dd4;
+}
+
+.relegated {
+    color: inherit;
+    background: #d44;
+}
+
+.home-win, .home-draw, .home-loss {
+    display: inline-block;
+    border-width: 0.5em;
+    border-style: solid;
+}
+
+.home-win {
+    border-top-color: #0b0;
+    border-left-color: #0b0;
+}
+
+.home-draw {
+    border-top-color: #bb0;
+    border-left-color: #bb0;
+}
+
+.home-loss {
+    border-top-color: #b00;
+    border-left-color: #b00;
+}
+
+.away-win {
+    border-bottom-color: #0b0;
+    border-right-color: #0b0;
+}
+
+.away-draw {
+    border-bottom-color: #bb0;
+    border-right-color: #bb0;
+}
+.away-loss {
+    border-bottom-color: #b00;
+    border-right-color: #b00;
+}
