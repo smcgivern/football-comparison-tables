@@ -58,11 +58,12 @@ $(function() {
     $('thead tr th:first-child').before(element('th', clearAll));
 
     $('tbody tr', context).each(function(i, row) {
-        var input = element('input', '', {type: 'checkbox'});
+        var teamID = $(row).attr('id'),
+            input = element('input', '',
+                            {type: 'checkbox', id: 'input-' + teamID});
 
         input.change(function() {
-            var teamID = $(this).parent().attr('id'),
-                idClass = 'team-' + teamID,
+            var idClass = 'team-' + teamID,
                 tdClasses = {'class': 'new ' + idClass};
 
             if (!$(this).attr('checked')) {
