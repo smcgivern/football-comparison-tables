@@ -62,6 +62,11 @@ $(function() {
             input = element('input', '',
                             {type: 'checkbox', id: 'input-' + teamID});
 
+        $('td.text', row).wrapInner(function() {
+            return element('label', '',
+                           {for: 'input-' + teamID, onclick: ''});
+        });
+
         input.change(function() {
             var idClass = 'team-' + teamID,
                 tdClasses = {'class': 'new ' + idClass};
