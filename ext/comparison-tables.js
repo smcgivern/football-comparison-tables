@@ -65,7 +65,6 @@ $(function() {
                 idClass = 'team-' + teamID,
                 tdClasses = {'class': 'new ' + idClass};
 
-
             if (!$(this).attr('checked')) {
                 return $('.' + idClass, context).remove();
             }
@@ -74,7 +73,7 @@ $(function() {
                 teamAbbr = teamName.replace(/[^A-Z]/g, ''),
                 header = element('abbr', teamAbbr, {title: teamName});
 
-            $('thead tr').append(element('th', header, tdClasses));
+            $('thead tr', context).append(element('th', header, tdClasses));
 
             var teamResults = results.filter(function(res) {
                 return (res.homeTeam === teamID || res.awayTeam === teamID);
