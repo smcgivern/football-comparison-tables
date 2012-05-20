@@ -8,6 +8,10 @@ span[title], abbr[title] {
     cursor: help;
 }
 
+.click {
+    cursor: pointer !important;
+}
+
 table {
     border-collapse: collapse;
     line-height: normal;
@@ -49,6 +53,11 @@ td.text {
 .relegated {
     color: inherit;
     background: #ff8080;
+}
+
+.new {
+    color: inherit;
+    background: #fff;
 }
 
 .home-win, .home-draw, .home-loss {
