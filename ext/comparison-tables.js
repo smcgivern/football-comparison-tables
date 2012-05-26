@@ -52,7 +52,7 @@ $(function() {
                            {'class': 'click', title: 'Clear all'});
 
     clearAll.click(function() {
-        $('input:checked', context).attr('checked', false);
+        $('input:checked', context).attr('checked', false).change();
     });
 
     $('thead tr th:first-child').before(element('th', clearAll));
